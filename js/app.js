@@ -12,7 +12,8 @@ app.controller('myCtrl', function($scope) {
       "charName" : "", 
       "playerName" : "",
       "initiative" : "",
-      "hp" : ""
+      "hp" : "",
+      "notes" : ""
     }
   ];
 
@@ -23,7 +24,8 @@ app.controller('myCtrl', function($scope) {
         "charName" : "", 
         "playerName" : "",
         "initiative" : "",
-        "hp" : ""
+        "hp" : "",
+        "notes": ""
       }
     );
     $scope.nextId ++;
@@ -49,7 +51,8 @@ app.controller('myCtrl', function($scope) {
         "charName" : item.charName, 
         "playerName" : item.playerName,
         "initiative" : item.initiative,
-        "hp" : item.hp
+        "hp" : item.hp,
+        "notes" : ""
       };
     
     $scope.nextId ++;
