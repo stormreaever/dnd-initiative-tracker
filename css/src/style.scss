@@ -65,7 +65,7 @@ button {
     background-color: $green;
     color: #fff;
     &:hover {
-      background-color: lighten($green, 3%);
+      background-color: lighten($green, 5%);
     }
   }
 }
