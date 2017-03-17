@@ -11,23 +11,29 @@ app.controller('myCtrl', function($scope) {
       "id" : 0, 
       "charName" : "", 
       "playerName" : "",
-      "initiative" : 0,
+      "initiative" : "",
       "hp" : ""
     }
   ];
 
   $scope.add = function() {
-    console.log($scope.nextId);
     $scope.charList.push(
       {
         "id" : $scope.nextId, 
         "charName" : "", 
         "playerName" : "",
-        "initiative" : 0,
+        "initiative" : "",
         "hp" : ""
       }
     );
     $scope.nextId ++;
+  };
+
+  $scope.moreHp = function(char) {
+    char.hp ++;
+  };
+  $scope.lessHp = function(char) {
+    char.hp --;
   };
 
   $scope.remove = function(item) { 

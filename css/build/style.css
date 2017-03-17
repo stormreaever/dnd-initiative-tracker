@@ -1,3 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  width: 1200px;
-  margin: 0 auto; }
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Gill Sans", Futura, sans-serif;
+  color: #334; }
+
+h1 {
+  margin: 40px 0; }
+
+button {
+  font-family: "Gill Sans", Futura, sans-serif;
+  display: block;
+  color: #334;
+  background-color: #f2f3f3;
+  padding: 15px 20px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.2s linear; }
+  button:focus {
+    outline: none; }
+  button.btn:hover, button.btn:focus {
+    box-shadow: 0 0 5px 0 #999;
+    background: #fbfbfb; }
+  button.btn:focus {
+    box-shadow: 0 0 5px 0 #999; }
+  button.btn.add {
+    background-color: #395;
+    color: #fff; }
+    button.btn.add:hover {
+      background-color: #37a45b; }
+
+input {
+  font-size: 18px;
+  font-family: "DIN", "DIN Alternate";
+  color: #334;
+  padding: 4px 10px;
+  -webkit-appearance: none;
+  border: 1px solid #d9dadc;
+  border-radius: 4px;
+  transition: all 0.2s linear; }
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 3px 0 #d9dadc; }
+
+ul.character-items {
+  list-style: none; }
+  ul.character-items li {
+    background: #fbfbfb;
+    border-radius: 8px;
+    margin: 20px 0;
+    position: relative; }
+    ul.character-items li:after {
+      content: "";
+      display: table;
+      clear: both; }
+    ul.character-items li .initiative {
+      background: #f2f3f3;
+      border-radius: 8px 0 0 8px;
+      height: 100%;
+      padding: 20px 40px 30px;
+      margin-right: 20px;
+      display: block;
+      float: left;
+      text-align: center; }
+      ul.character-items li .initiative span {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px; }
+      ul.character-items li .initiative input {
+        display: block;
+        width: 65px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-size: 40px;
+        padding: 2px 8px;
+        text-align: right; }
+      ul.character-items li .initiative input::-webkit-inner-spin-button,
+      ul.character-items li .initiative input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+    ul.character-items li .meta-btns {
+      float: right;
+      height: 100%; }
+      ul.character-items li .meta-btns button {
+        position: absolute;
+        right: 0;
+        height: 50%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff; }
+      ul.character-items li .meta-btns .btn-remove {
+        top: 0;
+        border-radius: 0 8px 0 0;
+        background: #e66; }
+        ul.character-items li .meta-btns .btn-remove:hover, ul.character-items li .meta-btns .btn-removefocus {
+          background: #eb4f4f; }
+      ul.character-items li .meta-btns .btn-duplicate {
+        bottom: 0;
+        border-radius: 0 0 8px 0;
+        background: #68e; }
+        ul.character-items li .meta-btns .btn-duplicate:hover, ul.character-items li .meta-btns .btn-duplicatefocus {
+          background: #4f76eb; }
+    ul.character-items li .name-boxes {
+      padding-top: 20px; }
+      ul.character-items li .name-boxes input {
+        margin-right: 10px; }
+    ul.character-items li .hp {
+      margin-top: 20px; }
+      ul.character-items li .hp input {
+        font-size: 24px;
+        width: 60px;
+        float: left;
+        border-radius: 0;
+        border-width: 1px 0;
+        text-align: center; }
+        ul.character-items li .hp input::-webkit-inner-spin-button, ul.character-items li .hp input::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+      ul.character-items li .hp button {
+        float: left;
+        height: 39px;
+        padding: 6px 18px;
+        color: #334;
+        background: #f2f3f3;
+        border: 1px solid #d9dadc; }
+        ul.character-items li .hp button.less {
+          border-radius: 6px 0 0 6px; }
+        ul.character-items li .hp button.more {
+          border-radius: 0 6px 6px 0; }

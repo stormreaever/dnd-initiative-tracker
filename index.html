@@ -12,29 +12,42 @@
 <div ng-app="myApp" ng-controller="myCtrl">
 
 
-<ul>
-  <li ng-repeat="char in charList | orderBy : '-initiative'">
-    <p>Initiative: <input type="number" ng-model="char.initiative"></p>
-    <p>Character: <input type="text" ng-model="char.charName" placeholder="Character"></p>
-    <p>Player: <input type="text" ng-model="char.playerName" placeholder="Player"></p>
-    <p>Hit Points: <input type="number" ng-model="char.hp" placeholder="HP"></p>
+<ul class="character-items">
+  <li class="character-item" ng-repeat="char in charList | orderBy : '-initiative'">
+    <label class="initiative">
+      <span>Initiative</span>
+      <input type="number" ng-model="char.initiative">
+    </label>
     
-    <p><button ng-click="remove(char)">Remove</button></p>
-    <p><button ng-click="duplicate(char)">Duplicate</button></p>
+    <div class="meta-btns">
+      <button tabindex="-1" class="btn-remove" ng-click="remove(char)" title="remove">&times;</button>
+      <button tabindex="-1" class="btn-duplicate" ng-click="duplicate(char)" title="duplicate">+</button>
+    </div>
+    
+    <div class="name-boxes" >
+      <input class="box-char" type="text" ng-model="char.charName" placeholder="Character">
+      <input class="box-player" type="text" ng-model="char.playerName" placeholder="Player">
+    </div>
+    
+    <div class="hp">
+      <button class="less" ng-click="lessHp(char)">-</button>
+      <input type="number" ng-model="char.hp" placeholder="HP">
+        <button class="more" ng-click="moreHp(char)">+</button>
+    </div>
   
   
   </li>
 </ul>
 
 
-<p><button ng-click="add()">Add Character</button></p>
+<p><button class="btn add" ng-click="add()">Add Character</button></p>
 
 
 
 </div>
 
 
-<script src="js/App.js"></script>
+<script src="js/app.js"></script>
   
 </body>
 </html>
