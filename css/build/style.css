@@ -46,10 +46,11 @@ input {
   -webkit-appearance: none;
   border: 1px solid #d9dadc;
   border-radius: 4px;
-  transition: all 0.2s linear; }
+  transition: all 0.3s linear; }
   input:focus {
     outline: none;
-    box-shadow: 0 0 3px 0 #d9dadc; }
+    box-shadow: 0 0 3px 0 #d9dadc;
+    border-color: #334; }
 
 ul.character-items {
   list-style: none; }
@@ -82,7 +83,13 @@ ul.character-items {
         margin-top: 10px;
         font-size: 40px;
         padding: 2px 8px;
-        text-align: right; }
+        text-align: center;
+        border-width: 0 0 1px 0;
+        border-radius: 0;
+        background: transparent; }
+        ul.character-items li .initiative input:hover {
+          box-shadow: none;
+          border-color: #334; }
       ul.character-items li .initiative input::-webkit-inner-spin-button,
       ul.character-items li .initiative input::-webkit-outer-spin-button {
         -webkit-appearance: none;
@@ -114,7 +121,13 @@ ul.character-items {
     ul.character-items li .name-boxes {
       padding-top: 20px; }
       ul.character-items li .name-boxes input {
-        margin-right: 10px; }
+        margin-right: 10px;
+        background: transparent;
+        border-width: 0 0 1px 0;
+        border-radius: 0; }
+        ul.character-items li .name-boxes input:focus {
+          box-shadow: none;
+          border-color: #334; }
     ul.character-items li .hp {
       margin-top: 20px; }
       ul.character-items li .hp input {
@@ -122,8 +135,9 @@ ul.character-items {
         width: 60px;
         float: left;
         border-radius: 0;
-        border-width: 1px 0;
         text-align: center; }
+        ul.character-items li .hp input:focus {
+          border-color: #334; }
         ul.character-items li .hp input::-webkit-inner-spin-button, ul.character-items li .hp input::-webkit-outer-spin-button {
           -webkit-appearance: none;
           margin: 0; }
@@ -135,9 +149,11 @@ ul.character-items {
         background: #f2f3f3;
         border: 1px solid #d9dadc; }
         ul.character-items li .hp button.less {
-          border-radius: 6px 0 0 6px; }
+          border-radius: 6px 0 0 6px;
+          border-right-width: 0; }
         ul.character-items li .hp button.more {
-          border-radius: 0 6px 6px 0; }
+          border-radius: 0 6px 6px 0;
+          border-left-width: 0; }
     ul.character-items li.ng-enter {
       transition: 0.5s linear all;
       opacity: 0; }

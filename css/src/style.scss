@@ -81,11 +81,12 @@ input {
   border: 1px solid $grey3;
   border-radius: 4px;
   
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
   
   &:focus {
     outline: none;
     box-shadow: 0 0 3px 0 $grey3;
+    border-color: $black;
   }
 }
 
@@ -127,7 +128,16 @@ ul.character-items {
         margin-top: 10px;
         font-size: 40px;
         padding: 2px 8px;
-        text-align: right;
+        text-align: center;
+        
+        border-width: 0 0 1px 0;
+        border-radius: 0;
+        background: transparent;
+        
+        &:hover {
+          box-shadow: none;
+          border-color: $black;
+        }
       }
       // remove number controls
       input::-webkit-inner-spin-button, 
@@ -173,7 +183,15 @@ ul.character-items {
       padding-top: 20px;
       
       input {
-        margin-right: 10px;
+        margin-right: 10px; 
+        background: transparent;
+        border-width: 0 0 1px 0;
+        border-radius: 0;
+        
+        &:focus {
+          box-shadow: none;
+          border-color: $black;
+        }
       }
     }
     
@@ -184,8 +202,12 @@ ul.character-items {
         width: 60px;
         float: left;
         border-radius: 0;
-        border-width: 1px 0;
         text-align: center;
+        
+        &:focus {
+          border-color: $black;
+        }
+        
         
         // remove number controls
         &::-webkit-inner-spin-button, 
@@ -204,9 +226,11 @@ ul.character-items {
         
         &.less {
           border-radius: 6px 0 0 6px ;
+          border-right-width: 0;
         }
         &.more {
           border-radius: 0 6px 6px 0;
+          border-left-width: 0;
         }
       }
     }
