@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Initiative Tracker</title>
+  <link rel="stylesheet" href="css/build/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+  
+  <h1>Initiative Tracker</h1>
+  
+<div ng-app="myApp" ng-controller="myCtrl">
+
+
+<ul>
+  <li ng-repeat="char in charList | orderBy : '-initiative'">
+    <p>Initiative: <input type="number" ng-model="char.initiative"></p>
+    <p>Character: <input type="text" ng-model="char.charName" placeholder="Character"></p>
+    <p>Player: <input type="text" ng-model="char.playerName" placeholder="Player"></p>
+    <p>Hit Points: <input type="number" ng-model="char.hp" placeholder="HP"></p>
+    
+    <p><button ng-click="remove(char)">Remove</button></p>
+    <p><button ng-click="duplicate(char)">Duplicate</button></p>
+  
+  
+  </li>
+</ul>
+
+
+<p><button ng-click="add()">Add Character</button></p>
+
+
+
+</div>
+
+
+<script src="js/App.js"></script>
+  
+</body>
+</html>
