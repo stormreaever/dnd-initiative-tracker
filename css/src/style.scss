@@ -62,10 +62,21 @@ button {
   }
   
   &.btn.add {
+    float: left;
     background-color: $green;
     color: #fff;
     &:hover {
-      background-color: lighten($green, 5%);
+      background-color: darken($green, 5%);
+    }
+  }
+  
+  &.btn.clearInit {
+    float: left;
+    margin-left: 10px;
+    background-color: $red;
+    color: #fff;
+    &:hover {
+      background-color: darken($red, 5%);
     }
   }
 }

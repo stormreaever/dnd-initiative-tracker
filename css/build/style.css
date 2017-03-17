@@ -33,10 +33,18 @@ button {
   button.btn:focus {
     box-shadow: 0 0 5px 0 #999; }
   button.btn.add {
+    float: left;
     background-color: #395;
     color: #fff; }
     button.btn.add:hover {
-      background-color: #39ac60; }
+      background-color: #2d864a; }
+  button.btn.clearInit {
+    float: left;
+    margin-left: 10px;
+    background-color: #e66;
+    color: #fff; }
+    button.btn.clearInit:hover {
+      background-color: #eb4f4f; }
 
 input {
   font-size: 18px;

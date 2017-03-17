@@ -30,6 +30,12 @@ app.controller('myCtrl', function($scope) {
     );
     $scope.nextId ++;
   };
+  
+  $scope.clearInit = function() {
+    $scope.charList.forEach(function (char) {
+      char.initiative = "";
+    });
+  };
 
   $scope.moreHp = function(char) {
     char.hp ++;
