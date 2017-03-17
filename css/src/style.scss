@@ -75,18 +75,21 @@ input {
   font-family: $fonts-din;
   color: $black;
   
-  padding: 4px 10px;
+  padding: 4px 8px;
   
   -webkit-appearance: none;
   border: 1px solid $grey3;
-  border-radius: 4px;
   
   transition: all 0.3s linear;
   
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  background: transparent;
+  
   &:focus {
-    outline: none;
-    box-shadow: 0 0 3px 0 $grey3;
+    box-shadow: none;
     border-color: $black;
+    outline: none;
   }
 }
 
@@ -127,17 +130,9 @@ ul.character-items {
         margin: 0 auto;
         margin-top: 10px;
         font-size: 40px;
-        padding: 2px 8px;
+        padding: 2px 0;
         text-align: center;
         
-        border-width: 0 0 1px 0;
-        border-radius: 0;
-        background: transparent;
-        
-        &:hover {
-          box-shadow: none;
-          border-color: $black;
-        }
       }
       // remove number controls
       input::-webkit-inner-spin-button, 
@@ -184,14 +179,7 @@ ul.character-items {
       
       input {
         margin-right: 10px; 
-        background: transparent;
-        border-width: 0 0 1px 0;
-        border-radius: 0;
         
-        &:focus {
-          box-shadow: none;
-          border-color: $black;
-        }
       }
     }
     
@@ -203,6 +191,10 @@ ul.character-items {
         float: left;
         border-radius: 0;
         text-align: center;
+        padding: 4px 0;
+        
+        background: #fff;
+        border: 1px solid $grey3;
         
         &:focus {
           border-color: $black;
@@ -216,6 +208,7 @@ ul.character-items {
           margin: 0; 
         }
       }
+      
       button {
         float: left;
         height: 39px;
@@ -233,6 +226,13 @@ ul.character-items {
           border-left-width: 0;
         }
       }
+    }
+    
+    .notes input {
+      margin-left: 20px;
+      margin-top: 8px;
+      font-size: 16px;
+      width: calc(100% - 440px);
     }
     
     // enter and leave animations
