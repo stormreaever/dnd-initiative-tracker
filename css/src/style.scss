@@ -211,6 +211,21 @@ ul.character-items {
       }
     }
     
+    // enter and leave animations
+    &.ng-enter {
+      transition:0.5s linear all;
+      opacity:0;
+    }
+    &.ng-enter.ng-enter-active {
+      opacity:1;
+    }
+    &.ng-leave {
+      transition:0.5s linear all;
+      opacity:1;
+    }
+    &.ng-leave.ng-leave-active {
+      opacity:0;
+    }
     
   }
 }

@@ -138,3 +138,13 @@ ul.character-items {
           border-radius: 6px 0 0 6px; }
         ul.character-items li .hp button.more {
           border-radius: 0 6px 6px 0; }
+    ul.character-items li.ng-enter {
+      transition: 0.5s linear all;
+      opacity: 0; }
+    ul.character-items li.ng-enter.ng-enter-active {
+      opacity: 1; }
+    ul.character-items li.ng-leave {
+      transition: 0.5s linear all;
+      opacity: 1; }
+    ul.character-items li.ng-leave.ng-leave-active {
+      opacity: 0; }
