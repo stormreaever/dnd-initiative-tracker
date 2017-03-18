@@ -170,3 +170,39 @@ ul.character-items {
       opacity: 1; }
     ul.character-items li.ng-leave.ng-leave-active {
       opacity: 0; }
+
+a {
+  color: #e66;
+  font-family: "Gill Sans", Futura, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  transition: 0.3s; }
+  a:hover {
+    border-color: #e66; }
+
+p, ul {
+  margin: 1.2em 0;
+  line-height: 1.6;
+  font-size: 22px; }
+
+.docs .main {
+  max-width: 900px; }
+
+.docs h2 {
+  margin: 1em 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.docs p, .docs ul, .docs ol {
+  margin: 1.2em 0;
+  line-height: 1.6;
+  font-family: Palatino, Cambria, serif;
+  font-size: 22px; }
+
+.docs ol, .docs ul {
+  font-size: 18px;
+  padding-left: 40px; }
+  .docs ol li, .docs ul li {
+    margin: 0.8em 0; }

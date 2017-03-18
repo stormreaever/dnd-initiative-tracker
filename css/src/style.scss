@@ -265,3 +265,46 @@ ul.character-items {
   }
 }
 
+a {
+  color: $red;
+  font-family: $fonts-sans;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  transition: 0.3s;
+  &:hover {
+    border-color: $red;
+  }
+}
+p, ul {
+  margin: 1.2em 0;
+  line-height: 1.6;
+  font-size: 22px;
+}
+
+.docs {
+  .main {
+    max-width: 900px;
+  }
+  
+  h2 {
+    margin: 1em 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  p, ul, ol {
+    margin: 1.2em 0;
+    line-height: 1.6;
+    font-family: $fonts-normal;
+    font-size: 22px;
+  }
+  ol, ul {
+    font-size: 18px;
+    padding-left: 40px;
+    li {
+      margin: 0.8em 0;
+    }
+  }
+}
