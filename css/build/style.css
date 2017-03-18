@@ -35,12 +35,15 @@ button {
   button.btn.add {
     float: left;
     background-color: #395;
-    color: #fff; }
+    color: #fff;
+    margin-left: 0;
+    margin-right: 10px; }
     button.btn.add:hover {
       background-color: #2d864a; }
   button.btn.clear {
     float: left;
-    margin-left: 10px;
+    margin-left: 0;
+    margin-right: 10px;
     background-color: #e66;
     color: #fff; }
     button.btn.clear:hover {
