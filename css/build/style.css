@@ -38,12 +38,12 @@ button {
     color: #fff; }
     button.btn.add:hover {
       background-color: #2d864a; }
-  button.btn.clearInit {
+  button.btn.clear {
     float: left;
     margin-left: 10px;
     background-color: #e66;
     color: #fff; }
-    button.btn.clearInit:hover {
+    button.btn.clear:hover {
       background-color: #eb4f4f; }
 
 input {

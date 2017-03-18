@@ -36,6 +36,12 @@ app.controller('myCtrl', function($scope) {
       char.initiative = "";
     });
   };
+  
+  $scope.clearNotes = function() {
+    $scope.charList.forEach(function (char) {
+      char.notes = "";
+    });
+  };
 
   $scope.moreHp = function(char) {
     char.hp ++;
