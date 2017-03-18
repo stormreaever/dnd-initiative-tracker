@@ -2,7 +2,7 @@ $fonts-sans: "Gill Sans", Futura, sans-serif;
 $fonts-normal: Palatino, Cambria, serif;
 $fonts-din: "DIN", "DIN Alternate";
 
-$black: #334;
+$black: #333339;
 
 $grey1 : #fbfbfb;
 $grey2 : #f2f3f3;
@@ -78,6 +78,15 @@ button {
     &:hover {
       background-color: darken($red, 5%);
     }
+  }
+}
+
+.panel {
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -195,7 +204,7 @@ ul.character-items {
     }
     
     .hp {
-      margin-top: 20px;
+      margin-top: 25px;
       input {
         font-size: 24px;
         width: 60px;
@@ -241,9 +250,10 @@ ul.character-items {
     
     .notes input {
       margin-left: 20px;
-      margin-top: 8px;
-      font-size: 16px;
+      margin-top: 12px;
+      font-size: 14px;
       width: calc(100% - 440px);
+      
     }
     
     // enter and leave animations

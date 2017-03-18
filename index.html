@@ -17,6 +17,12 @@
   
 <div ng-app="myApp" ng-controller="myCtrl">
 
+  
+
+  <div class="panel"><button class="btn add" ng-click="add()">Add Character</button>
+    <button class="btn clear" ng-click="clearInit()">Clear Initiative</button>
+    <button class="btn clear" ng-click="clearNotes()">Clear Notes</button>
+  </div>
 
 <ul class="character-items">
   <li class="character-item" ng-repeat="char in charList | orderBy : '-initiative'">
@@ -51,10 +57,6 @@
   </li>
 </ul>
 
-
-<button class="btn add" ng-click="add()">Add Character</button>
-<button class="btn clear" ng-click="clearInit()">Clear Initiative</button>
-<button class="btn clear" ng-click="clearNotes()">Clear Notes</button>
 
 
 

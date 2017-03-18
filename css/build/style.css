@@ -8,7 +8,7 @@ body {
   margin: 20px auto;
   padding: 0 20px;
   font-family: "Gill Sans", Futura, sans-serif;
-  color: #334; }
+  color: #333339; }
 
 h1 {
   margin: 40px 0; }
@@ -16,7 +16,7 @@ h1 {
 button {
   font-family: "Gill Sans", Futura, sans-serif;
   display: block;
-  color: #334;
+  color: #333339;
   background-color: #f2f3f3;
   padding: 15px 20px;
   border: none;
@@ -46,10 +46,15 @@ button {
     button.btn.clear:hover {
       background-color: #eb4f4f; }
 
+.panel:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 input {
   font-size: 18px;
   font-family: "DIN", "DIN Alternate";
-  color: #334;
+  color: #333339;
   padding: 4px 8px;
   -webkit-appearance: none;
   border: 1px solid #d9dadc;
@@ -59,7 +64,7 @@ input {
   background: transparent; }
   input:focus {
     box-shadow: none;
-    border-color: #334;
+    border-color: #333339;
     outline: none; }
 
 ul.character-items {
@@ -127,7 +132,7 @@ ul.character-items {
       ul.character-items li .name-boxes input {
         margin-right: 10px; }
     ul.character-items li .hp {
-      margin-top: 20px; }
+      margin-top: 25px; }
       ul.character-items li .hp input {
         font-size: 24px;
         width: 60px;
@@ -138,7 +143,7 @@ ul.character-items {
         background: #fff;
         border: 1px solid #d9dadc; }
         ul.character-items li .hp input:focus {
-          border-color: #334; }
+          border-color: #333339; }
         ul.character-items li .hp input::-webkit-inner-spin-button, ul.character-items li .hp input::-webkit-outer-spin-button {
           -webkit-appearance: none;
           margin: 0; }
@@ -146,7 +151,7 @@ ul.character-items {
         float: left;
         height: 39px;
         padding: 6px 18px;
-        color: #334;
+        color: #333339;
         background: #f2f3f3;
         border: 1px solid #d9dadc; }
         ul.character-items li .hp button.less {
@@ -157,8 +162,8 @@ ul.character-items {
           border-left-width: 0; }
     ul.character-items li .notes input {
       margin-left: 20px;
-      margin-top: 8px;
-      font-size: 16px;
+      margin-top: 12px;
+      font-size: 14px;
       width: calc(100% - 440px); }
     ul.character-items li.ng-enter {
       transition: 0.5s linear all;
