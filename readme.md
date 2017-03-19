@@ -4,6 +4,8 @@
 
 Tracking initiative and HP for characters during the game. 
 
+For more info, open [docs.html](https://stormreaever.github.io/dnd-initiative-tracker/docs.html)
+
 ## Technical Stuff
 
 ### Stuff this uses
