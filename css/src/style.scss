@@ -211,6 +211,7 @@ ul.character-items {
       input {
         font-size: 24px;
         width: 60px;
+        height: 40px;
         float: left;
         border-radius: 0;
         text-align: center;
@@ -234,7 +235,7 @@ ul.character-items {
       
       button {
         float: left;
-        height: 39px;
+        height: 40px;
         padding: 6px 18px;
         color: $black;
         background: $grey2;

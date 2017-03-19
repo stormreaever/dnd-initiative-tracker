@@ -139,6 +139,7 @@ ul.character-items {
       ul.character-items li .hp input {
         font-size: 24px;
         width: 60px;
+        height: 40px;
         float: left;
         border-radius: 0;
         text-align: center;
@@ -152,7 +153,7 @@ ul.character-items {
           margin: 0; }
       ul.character-items li .hp button {
         float: left;
-        height: 39px;
+        height: 40px;
         padding: 6px 18px;
         color: #333339;
         background: #f2f3f3;
